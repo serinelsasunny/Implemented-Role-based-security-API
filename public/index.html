@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    <h2>
+        Products API
+    </h2>
+</title>
+    </head>
+    <body>
+<h3>
+    To test the Product API
+</h3>
+    </body>
+    <script>
+        async function getProducts(){
+            const response = await fetch("http://localhost:8080/api/products")
+            console.log(response)
+            const data = await response.json()
+            console.log("data:",data)
+        }
+        getProducts()
+    </script>
+</html>
+
+

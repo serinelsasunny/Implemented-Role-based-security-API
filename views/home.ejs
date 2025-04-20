@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+<body>
+<h2>
+    This is the page built using ejs template engine
+</h2>
+<h2>
+    Recommended Product is:<%=Product.title %> with a price of <%=Product.Price%>
+</h2>
+<% Categories.forEach(categories=>{%>
+<h1><%=categories%></h1>
+<%})%>
+
+
+</body>
+</html>
